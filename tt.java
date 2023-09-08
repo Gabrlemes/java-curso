@@ -2,16 +2,17 @@
 
 public class tt {
     public static void main(String[] args) {
-        Scanner sc -new Scanner(System.in);
-        double valo1;
-        double Resultado;
+        Scanner sc = new Scanner(System.in);
+        double R;
+        double A;
 
-        System.out.println("digite um número para calcular o raio de um circulo");
-        valo1 = sc.nextDouble();
-        Resultado = 3.14159 * (valo1 * valo1);
-        System.out.println("o valor do raio é" + Resultado);
+        System.out.println("digite um número para calcular o raio de um circulo:");
+        R = sc.nextDouble();
+        A = 3.14159 * (R * R);
+        System.out.println("o valor do raio é " + A);
 
         sc.close();
+
 
          }
     }
