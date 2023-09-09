@@ -3,13 +3,23 @@
 public class tt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double R;
-        double A;
+        int a;
+        int b;
+        int c;
+        int d;
+        int diferenca;
 
-        System.out.println("digite um número para calcular o raio de um circulo:");
-        R = sc.nextDouble();
-        A = 3.14159 * (R * R);
-        System.out.println("o valor do raio é " + A);
+        System.out.println("digite um números para calcular a diferença entre os grupos:");
+        a = sc.nextInt();
+        System.out.println("mais um número:");
+        b = sc.nextInt();
+        System.out.println("mais um:");
+        c = sc.nextInt();
+        System.out.println("ultimo número:");
+        d = sc.nextInt();
+        diferenca = (a*b - c*d);
+
+        System.out.println("o valor da diferença é " + diferenca);
 
         sc.close();
 
