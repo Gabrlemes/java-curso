@@ -3,20 +3,21 @@
 public class tt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int numero, horas;
-        double valorHora, salario;
+        int hora;
 
-        System.out.println("digite sua numeração de funcionário: ");
-        numero = sc.nextInt();
-        System.out.println("horas trabalhadas: ");
-        horas = sc.nextInt();
-        System.out.println("quanto ganha por hora? ");
-        valorHora = sc.nextDouble();
+        System.out.println("que horas são? ");
+        hora = sc.nextInt();
 
-        salario = valorHora * horas;
+        if(hora < 12) {
+            System.out.println("bom dia!");
+        }
+        else if(hora < 18) {
+            System.out.println("boa tarde!");
+        }
+        else{
+            System.out.println("boa noite!");
+        }
 
-        System.out.println("funcionário = " + numero);
-        System.out.printf("recebe = R$ %.2f%n", salario);
 
         sc.close();
     }
