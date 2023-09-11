@@ -23,7 +23,7 @@ public class teste {
         System.out.println("Agora digite um número para calcular o raio de um circulo:");
         R = sc.nextDouble();
         A = 3.14159 * (R * R);
-        System.out.println("o valor do raio é " + A);
+        System.out.println("o valor do raio é = " + A);
 
         //calcular a diferença em grupos
         int a;
@@ -42,7 +42,7 @@ public class teste {
         d = sc.nextInt();
         diferenca = (a*b - c*d);
 
-        System.out.println("o valor da diferença é " + diferenca);
+        System.out.println("o valor da diferença é" + diferenca);
 
         sc.close();
 
