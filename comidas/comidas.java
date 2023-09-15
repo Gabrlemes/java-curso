@@ -1,19 +1,42 @@
-import java.util.List;
+package comidas;
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class comidas {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        String aula1 = "Modelando a classe Aula";
-        String aula2 = "Conhecendo mais de listas";
-        String aula3 = "Trabalhando com Cursos e Sets";
+        String p1 = "1- x-salada R$ 6.0\n ";
+        String p2 = "2- coca R$ 4.5\n ";
+        String p3 = "3- misto R$ 2.0\n ";
+        String p4 = "4- hot-dog R$ 4.0\n ";
 
-        ArrayList<String> aulas = new ArrayList<>();
-        aulas.add(aula1);
-        aulas.add(aula2);
-        aulas.add(aula3);
 
-        System.out.println(aulas);
+        System.out.println("escolha seu pedido:\n " + p1 + p2 + p3 + p4);
+
+        int codigo = sc.nextInt();
+        System.out.println("quantia ");
+        int quantidade = sc.nextInt();
+        double total = 0.0;
+
+        switch (codigo){
+            case 1:
+                total = quantidade * 6.0;
+                break;
+            case 2:
+                total = quantidade * 4.5;
+                break;
+            case 3:
+                total = quantidade * 2.0;
+            case 4:
+                total = quantidade * 4.0;
+            default:
+                System.out.println("escolha um valor válido.");
+        };
+        System.out.println("seu pedido ficou R$ " + total);
+
+        sc.close();
+
+        }
     }
-}
