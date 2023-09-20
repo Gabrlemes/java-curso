@@ -16,9 +16,11 @@ public class comidas {
         System.out.println("escolha seu pedido:\n " + p1 + p2 + p3 + p4);
 
         int codigo = sc.nextInt();
-        System.out.println("quantia ");
+        System.out.println("quantia: ");
         int quantidade = sc.nextInt();
+        int bebida;
         double total = 0.0;
+        double total2 = 0.0;
 
         switch (codigo){
             case 1:
@@ -33,7 +35,9 @@ public class comidas {
                 total = quantidade * 4.0;
             default:
                 System.out.println("escolha um valor válido.");
+
         };
+
         System.out.println("seu pedido ficou R$ " + total);
 
         sc.close();
