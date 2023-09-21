@@ -26,6 +26,11 @@ import java.util.Scanner;
             System.out.println("Intervalo (75,100]");
         }
 
+        //estrutura for
+        for(int i=0; i<5; i++) {
+            System.out.println("valor de i =" + i);
+        }
+
         sc.close();
     }
 }

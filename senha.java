@@ -38,6 +38,17 @@ import java.util.Scanner;
                 y = sc.nextInt();
             }
 
+            //do while
+            char resp;
+            do {
+                System.out.println("Digite a temperatura em Celsius e devolverei em fahrenheit: ");
+                double c = sc.nextDouble();
+                double f = 9.0 * c / 5.0 + 32.0;
+                System.out.printf("a temperatura em fahrenheit é de: %.1f%n", f);
+                System.out.println("deseja repetir o processo? (s/n);?");
+                resp = sc.next(). charAt(0);
+            }while (resp != 'n');
+
             sc.close();
         }
 
