@@ -8,6 +8,7 @@ import java.util.Scanner;
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("tempo em intervalo: ");
         double numero = sc.nextDouble();
 
         if (numero < 0.0 || numero > 100.0) {
@@ -24,11 +25,6 @@ import java.util.Scanner;
         }
         else {
             System.out.println("Intervalo (75,100]");
-        }
-
-        //estrutura for
-        for(int i=0; i<5; i++) {
-            System.out.println("valor de i =" + i);
         }
 
         sc.close();
