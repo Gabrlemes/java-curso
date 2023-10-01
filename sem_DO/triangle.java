@@ -1,3 +1,5 @@
+package sem_DO;
+
 import java.util.Scanner;
 import java.util.Locale;
 
@@ -24,11 +26,8 @@ public class triangle {
         y.B = sc.nextDouble();
         y.C = sc.nextDouble();
 
-        double p = (x.A + x.B + x.C) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
-
-        p = (y.A + y.B + y.C) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Área do triangulo x é: %.4f%n", areaX);
         System.out.printf("Área do triangulo y é: %.4f%n", areaY);

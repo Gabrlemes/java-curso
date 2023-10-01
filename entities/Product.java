@@ -1,6 +1,8 @@
 package entities;
 
-public class produtos {
+import javax.xml.namespace.QName;
+
+public class Product {
 
     public String nome;
     public double preco;
@@ -17,4 +19,15 @@ public class produtos {
     public void removeProducts(int quantidade) {
         this.quantidade -= quantidade;
     }
+
+    public String toString() {
+        return nome
+                + ", $ "
+                +String.format("%.2f", preco)
+                + ", "
+                + quantidade
+                +" unidades, total: $ "
+                + String.format("%.2f", totalValueStock());
+    }
+
 }

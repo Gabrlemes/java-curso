@@ -1,3 +1,5 @@
+package contas;
+
 import java.util.Scanner;
 
 public class impar {

@@ -1,3 +1,5 @@
+package contas;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,11 +10,11 @@ import java.util.Scanner;
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("tempo em intervalo: ");
+        System.out.println("tempo em contas.intervalo: ");
         double numero = sc.nextDouble();
 
         if (numero < 0.0 || numero > 100.0) {
-            System.out.println("Fora de intervalo");
+            System.out.println("Fora de contas.intervalo");
         }
         else if (numero <= 25.0) {
             System.out.println("Intervalo [0,25]");

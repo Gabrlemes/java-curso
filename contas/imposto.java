@@ -1,4 +1,6 @@
-    import java.util.Locale;
+package contas;
+
+import java.util.Locale;
     import java.util.Scanner;
 
 public class imposto {
