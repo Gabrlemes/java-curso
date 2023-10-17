@@ -27,7 +27,7 @@ public class notas {
         System.out.printf("nota final: %.2f%n", student.notaFinal() );
 
         if (student.notaFinal() < 60.0) {
-            System.out.println("você reprovou " + student.nome + ", faltaram " + student.faltaPonto());
+            System.out.println("você reprovou " + student.nome + ", faltaram " + student.faltaPonto() + " pontos");
         }
         else {
             System.out.println("parabéns "+ student.nome + "! você passou.");
