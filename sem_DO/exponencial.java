@@ -3,7 +3,7 @@ package sem_DO;
 import java.util.Scanner;
 
 //nao esqueca de mudar o nome da classe para Main
-public class divisores {
+public class exponencial {
 
     public static void main(String[] args) {
 
