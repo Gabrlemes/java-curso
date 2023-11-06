@@ -7,12 +7,12 @@ import java.util.Scanner;
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("digite a contas.senha: ");
+            System.out.println("digite a senha: ");
 
             int senha = sc.nextInt();
 
             while (senha != 2002) {
-                System.out.println("contas.senha incorreta!");
+                System.out.println("senha incorreta!");
                 senha = sc.nextInt();
             }
 
@@ -20,6 +20,7 @@ import java.util.Scanner;
 
 
             //plano cartesiano.
+            System.out.println("digite dois valores para o plano cartesiano: ");
             int x = sc.nextInt();
             int y = sc.nextInt();
 
