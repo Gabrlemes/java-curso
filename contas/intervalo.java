@@ -10,11 +10,11 @@ import java.util.Scanner;
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("tempo em contas.intervalo: ");
+        System.out.println("tempo em intervalo: ");
         double numero = sc.nextDouble();
 
         if (numero < 0.0 || numero > 100.0) {
-            System.out.println("Fora de contas.intervalo");
+            System.out.println("Fora de intervalo");
         }
         else if (numero <= 25.0) {
             System.out.println("Intervalo [0,25]");
