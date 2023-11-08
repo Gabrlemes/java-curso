@@ -1,3 +1,5 @@
+package diversos;
+
 import java.util.Scanner;
 
 public class retur {
