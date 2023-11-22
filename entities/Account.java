@@ -1,24 +1,24 @@
 package entities;
 
-public class contas {
+public class Account {
 
-    private int conta;
+    private int number;
     private String nameAccount;
-    private double saldo;
+    private double balance;
 
-    public contas(int conta, String nameAccount) {
-        this.conta = conta;
+    public Account(int number, String nameAccount) {
+        this.number = number;
         this.nameAccount = nameAccount;
     }
 
-    public contas(int conta, String nameAccount, double depositoInicial) {
-        this.conta = conta;
+    public Account(int number, String nameAccount, double initialDeposit) {
+        this.number = number;
         this.nameAccount = nameAccount;
-        deposito(depositoInicial);
+        deposit(initialDeposit);
     }
 
-    public int getConta() {
-        return conta;
+    public int getNumber() {
+        return number;
     }
 
     public String getNameAccount() {
@@ -29,25 +29,25 @@ public class contas {
         this.nameAccount = nameAccount;
     }
 
-    public double getSaldo() {
-        return saldo;
+    public double getBalance() {
+        return balance;
     }
 
-    public void deposito(double amount) {
-        saldo += amount;
+    public void deposit(double amount) {
+        balance += amount;
     }
 
     public void withdraw(double amount) {
-        saldo -= amount + 5.0;
+        balance -= amount + 5.0;
     }
 
     public String toString() {
         return "conta "
-                + conta
+                + number
                 + ", nome destinatário: "
                 + nameAccount
                 + ", saldo: $ "
-                + String.format("%.2f", saldo);
+                + String.format("%.2f", balance);
     }
 }
 
