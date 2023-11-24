@@ -1,3 +1,5 @@
+package vetores;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -24,11 +26,6 @@ public class vetores {
                 System.out.println(vet[i]);
             }
         }
-
-        //soma vetores
-
-        
-
         sc.close();
     }
 }
