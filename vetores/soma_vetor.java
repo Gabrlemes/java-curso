@@ -35,7 +35,7 @@ public class soma_vetor {
             System.out.printf("%.1f ", vetor[i]);
         }
 
-        System.out.printf("\nsoma = %.2f\n", soma);
-        System.out.printf("media = %.2f\n", media);
+        System.out.printf("\nsoma: %.2f\n", soma);
+        System.out.printf("media: %.2f\n", media);
     }
 }
