@@ -46,6 +46,11 @@ public class altura {
         double percent = cont * 100.0 / n;
         System.out.printf("pessoas com menos de 16 anos: %.1f%%%n", percent);
 
+        for (int i=0; i<n; i++) {
+            if (idades[i] < 16) {
+                System.out.println(nomes[i]);}
+        }
+
         sc.close();
     }
 }
