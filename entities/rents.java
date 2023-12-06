@@ -1,2 +1,4 @@
-package entities;public interface rents {
+package entities;
+
+public interface rents {
 }
