@@ -13,6 +13,7 @@ public class rent {
         this.email = email;
     }
 
+
     public String getName() {
         return name;
     }
@@ -27,8 +28,8 @@ public class rent {
         this.email = email;
     }
 
-   // @Override
     public String ToString() {
         return name + ", " + email;
     }
+
 }
