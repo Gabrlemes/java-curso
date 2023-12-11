@@ -1,15 +1,15 @@
+package entities;
 
-
-public class employee {
+public class Employee {
 
     private Integer id;
     private String name;
     private Double salary;
 
-    public employee() {
+    public Employee() {
     }
 
-    public employee(Integer id, String name, Double salary) {
+    public Employee(Integer id, String name, Double salary) {
         super();
         this.id = id;
         this.name = name;

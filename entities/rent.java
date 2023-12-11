@@ -28,8 +28,11 @@ public class rent {
         this.email = email;
     }
 
-    public String ToString() {
-        return name + ", " + email;
+    @Override
+    public String toString() {
+        return super.toString();
     }
+
+
 
 }
