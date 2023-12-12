@@ -17,8 +17,8 @@ public class prog {
         System.out.println("quantos funcionários serão registrados? ");
         int N = sc.nextInt();
 
-        for(int i=0; i<=N; i++) {
-            System.out.println("funcionário #" + (i+1) + ":");
+        for(int i=1; i<=N; i++) {
+            System.out.println("funcionário #");
             System.out.print("id: ");
             Integer id = sc.nextInt();
             System.out.println("nome: ");
@@ -34,7 +34,33 @@ public class prog {
 
         System.out.println("entre com o ID do funcionário que terá aumento: ");
         int idsalary = sc.nextInt();
+        Integer pos = position(list, idsalary);
+        if (pos == null) {
+            System.out.println("este funcionário não está cadastrado.");
+        }
+        else{
+            System.out.println("qual a porcentagem de aumento será efetuada? ");
+            double percent = sc.nextDouble();
+            list.get(pos).increaseSalary(percent);
+        }
+
+        System.out.println();
+        System.out.println("Lista de empregados: ");
+        for (Employee emp : list) {
+            System.out.println(emp);
+        }
+
 
         sc.close();
     }
+
+    public static Integer position(List<Employee> list, int id) {
+        for (int i=0; i<list.size(); i++) {
+            if (list.get(i).getId() == id) {
+                return i;
+            }
+        }
+        return null;
+    }
+
 }
