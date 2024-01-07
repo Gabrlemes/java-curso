@@ -29,12 +29,12 @@ public class matriz {
             for(int j=0; j<n; j++) {
                 if (mat[i][j] < 0) {
                     count++;
+
                 }
             }
         }
 
-        System.out.println("números negativos: ")
-        ;
+        System.out.println("números negativos: ");
 
         sc.close();
     }
